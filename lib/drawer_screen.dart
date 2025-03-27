@@ -13,7 +13,10 @@ class _DrawerScreenState extends State<DrawerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Drawer Navigation')),
+      backgroundColor: Colors.grey.shade900,
+      appBar: AppBar(title: const Text('Notes App',textAlign: TextAlign.center,),
+   
+      titleTextStyle: TextStyle(fontWeight: FontWeight.bold),),
       drawer: Drawer(
         backgroundColor: Colors.blueGrey,
         child: ListView(
@@ -55,7 +58,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
               },
             ),
               ListTile(
-              title: Text('To-Do-App'),
+              title: Text('Task Management'),
               leading: Icon(Icons.list_rounded, size: 25, color: Colors.black),
               trailing: Icon(Icons.navigate_next_rounded),
               onTap: () {
@@ -71,11 +74,17 @@ class _DrawerScreenState extends State<DrawerScreen> {
       
       
       body: const Center(
+      
+        
         child: Column(
+        
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            
             Text(
+              
               "Home Screen",
+            
               style: TextStyle(
                 fontSize: 40,
                 fontWeight: FontWeight.bold,
