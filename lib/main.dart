@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:notes/drawer_screen.dart';
+import 'package:notes/task_view.dart';
 
 
  void main() => runApp(MainApp());
@@ -18,7 +19,7 @@ class MainApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // Use StreamBuilder to listen for authentication state changes
-      home:  DrawerScreen(),
+      home:  TaskView(),
     );
   }
 }

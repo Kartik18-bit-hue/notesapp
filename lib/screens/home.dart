@@ -100,7 +100,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     width: 40,
                     height: 40,
                     decoration: BoxDecoration(
-                      color: Colors.grey.shade800.withOpacity(.8),
+                      color: Colors.grey,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: const Icon(Icons.sort, color: Colors.white),

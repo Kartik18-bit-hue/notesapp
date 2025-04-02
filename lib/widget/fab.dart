@@ -1,18 +1,24 @@
 import 'dart:developer' show log;
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:notes/task_view.dart';
+import 'package:notes/task_view_appbar.dart';
 
 class Fab extends StatelessWidget {
-  const Fab({
-    super.key,
-  });
+  const Fab({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        log("Task View");
+        Navigator.push(
+          context,
+          CupertinoPageRoute(builder: (_) => const TaskView(),
+          ),
+        );
+      
       },
       child: Material(
         borderRadius: BorderRadius.circular(15),

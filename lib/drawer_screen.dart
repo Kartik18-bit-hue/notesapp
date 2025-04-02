@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes/app_colors.dart';
 import 'package:notes/screens/home.dart';
 import 'package:notes/screens/task_screen.dart';
 
@@ -13,12 +14,13 @@ class _DrawerScreenState extends State<DrawerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade900,
-      appBar: AppBar(title: const Text('Notes App',textAlign: TextAlign.center,),
+      backgroundColor: AppColors.primaryColor,
+      appBar: AppBar(
+        title: const Text('Notes App',textAlign: TextAlign.center,),
    
       titleTextStyle: TextStyle(fontWeight: FontWeight.bold),),
       drawer: Drawer(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Color(0xffb06ab3),
         child: ListView(
           children: [
             DrawerHeader(
